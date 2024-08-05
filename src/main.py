@@ -52,5 +52,7 @@ def save_to_file(file_name:str, data:str) ->None:
 
 if __name__ == "__main__":
     name_list = clear_name("names.txt")
-    print(filter_russian_names(name_list))
-    print(filter_english_names(name_list))
+    rus_name_list = filter_russian_names(name_list)
+    save_to_file("rus_name.txt", "\n".join(rus_name_list))
+    eng_name = filter_english_names(name_list)
+    save_to_file("eng_name.txt", "\n".join(eng_name))
