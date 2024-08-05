@@ -42,7 +42,7 @@ def filter_english_names(name_list: list) -> list:
 
 
 def save_to_file(file_name:str, data:str) ->None:
-    """Функция сщздает фаил и записывает в него, полученные данные"""
+    """Функция сoздает фаил и записывает в него, полученные данные"""
     base_path = r"C:\Users\user\Desktop\skyPro\practic\lesons\lesons"
     full_path = os.path.join(base_path, "data", file_name)
 
